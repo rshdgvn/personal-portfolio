@@ -87,13 +87,19 @@ const Index = () => {
 
         <header className="fixed w-full top-0 z-50 bg-black/70 backdrop-blur-xl border-b border-green-500/20 shadow-[0_0_20px_rgba(0,255,100,0.1)]">
           <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-            {/* logo */}
-            <h1 className="text-2xl font-extrabold italic tracking-wider text-green-400 select-none relative">
-              <span className="relative z-10">
-                <span className="text-white">./</span>rshdgvn
-              </span>
-              <span className="absolute inset-0 blur-md opacity-40 bg-green-500/30 animate-pulse"></span>
-            </h1>
+            <div className="flex items-center space-x-5">
+              <img
+                src="favicon.ico"
+                className="h-8 w-8 object-contain"
+                alt="Logo"
+              />
+              <h1 className="text-2xl font-extrabold italic tracking-wider text-green-400 select-none relative">
+                <span className="relative z-10">
+                  <span className="text-white">./</span>rshdgvn
+                </span>
+                <span className="absolute inset-0 blur-md opacity-40 bg-green-500/30 animate-pulse"></span>
+              </h1>
+            </div>
 
             {/* nav */}
             <nav className="hidden md:block">
