@@ -129,7 +129,7 @@ const Index = () => {
           <div className="absolute bottom-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-green-400/40 to-transparent animate-pulse"></div>
         </header>
 
-        <main className="pt-16 relative z-10">
+        <main className="pt-16 relative z-10 space-y-48">
           <HeroSection />
           <AboutSection />
           <TechMarquee />
