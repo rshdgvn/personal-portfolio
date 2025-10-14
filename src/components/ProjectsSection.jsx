@@ -10,7 +10,7 @@ const ProjectsSection = () => {
       title: "LV CIS",
       description:
         "La Verdad Club Integrated System (LV-CIS) helps clubs stay organized. It includes features for tracking attendance, handling membership, and managing event tasks.",
-      techStack: ["React", "Node.js", "Express"],
+      techStack: ["Laravel", "React", "TailwindCSS", "XAMPP", "MySQL", "ShadcnUI"],
       url: "#",
       image: "/projects/LVCIS.png",
     },
@@ -19,7 +19,7 @@ const ProjectsSection = () => {
       title: "rshdgvn",
       description:
         "A personal portfolio built to showcase my journey as a developer — highlighting my featured projects, tech stack, and growth in software engineering and cybersecurity.",
-      techStack: ["Vue.js", "Django", "MongoDB"],
+      techStack: ["React", "TailwindCSS", "Framer Motion", "ShadcnUI"],
       url: "#",
       image: "/projects/rshdgvn.png",
     },
@@ -28,7 +28,7 @@ const ProjectsSection = () => {
       title: "PEP-7",
       description:
         "Web app that helps Grade 7 students improve their Filipino vocabulary through games.",
-      techStack: ["Svelte", "Rails", "MySQL"],
+      techStack: ["Laravel", "React", "Inertia", "React", "XAMPP", "MySQL"],
       url: "#",
       image: "/projects/pep-7.png",
     },
@@ -37,7 +37,7 @@ const ProjectsSection = () => {
       title: "AppDates",
       description:
         "Platform that keeps your projects up-to-date and on schedule with a smart, streamlined Kanban board.",
-      techStack: ["Svelte", "Rails", "MySQL"],
+      techStack: ["Laravel", "Blade", "TailwindCSS", "XAMPP", "MySQL"],
       url: "#",
       image: "/projects/app-dates.png",
     },
