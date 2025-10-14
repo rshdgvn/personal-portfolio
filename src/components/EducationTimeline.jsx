@@ -1,5 +1,5 @@
-import React from "react"
-import { motion } from "framer-motion"
+import React from "react";
+import { motion } from "framer-motion";
 
 const EducationTimeline = () => {
   const educationData = [
@@ -26,21 +26,30 @@ const EducationTimeline = () => {
       years: "2017–2021",
       degree: "Secondary Education",
       institution: "Liliw National Highschool",
-    }
-  ]
+    },
+  ];
 
   return (
     <section className="py-20 px-4">
       <div className="max-w-4xl mx-auto">
         <motion.h2
-          className="section-heading"
+          className="text-4xl md:text-5xl font-extrabold text-white mb-12 text-center hero-text-gradient"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.6 }}
         >
           Education and Experience
         </motion.h2>
+        <motion.p
+          className="text-center text-white/70 max-w-2xl mx-auto mb-32"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ delay: 0.2 }}
+        >
+          A timeline of where I’ve been — and where I’m heading next.
+        </motion.p>
 
         <div className="relative pl-10">
           {/* Timeline line with glow effect */}
@@ -60,7 +69,7 @@ const EducationTimeline = () => {
               <div
                 className="absolute -left-10 w-4 h-4 rounded-full bg-white/20 border border-white/40"
                 style={{
-                  boxShadow: "0 0 10px rgba(255, 255, 255, 0.3)"
+                  boxShadow: "0 0 10px rgba(255, 255, 255, 0.3)",
                 }}
               ></div>
 
@@ -75,7 +84,7 @@ const EducationTimeline = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default EducationTimeline
+export default EducationTimeline;

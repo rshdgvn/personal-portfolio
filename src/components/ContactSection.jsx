@@ -1,46 +1,46 @@
-import React, { useState } from "react"
-import { motion } from "framer-motion"
-import { Github, Linkedin, Facebook } from "lucide-react"
-import { toast } from "sonner"
+import React, { useState } from "react";
+import { motion } from "framer-motion";
+import { Github, Linkedin, Facebook } from "lucide-react";
+import { toast } from "sonner";
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    message: ""
-  })
+    message: "",
+  });
 
-  const [isSubmitting, setIsSubmitting] = useState(false)
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleChange = e => {
-    const { name, value } = e.target
-    setFormData(prev => ({ ...prev, [name]: value }))
-  }
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
 
-  const handleSubmit = e => {
-    e.preventDefault()
-    setIsSubmitting(true)
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setIsSubmitting(true);
 
     // Simulate form submission
     setTimeout(() => {
-      toast.success("Message sent successfully!")
-      setFormData({ name: "", email: "", message: "" })
-      setIsSubmitting(false)
-    }, 1500)
-  }
+      toast.success("Message sent successfully!");
+      setFormData({ name: "", email: "", message: "" });
+      setIsSubmitting(false);
+    }, 1500);
+  };
 
   return (
     <section id="contact" className="py-20 px-4 relative">
       {/* Corner light effect */}
       <div className="max-w-4xl mx-auto relative z-10">
         <motion.h2
-          className="section-heading relative"
+          className="text-4xl md:text-5xl font-extrabold text-white mb-32 text-center hero-text-gradient"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.6 }}
         >
-          Get In Touch
+          Get in Touch
         </motion.h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
@@ -126,7 +126,7 @@ const ContactSection = () => {
                   rel="noopener noreferrer"
                   className="p-3 border border-dark-200 rounded-full hover:border-white/40 transition-all hover:scale-110 group"
                   style={{
-                    boxShadow: "0 0 10px rgba(255, 255, 255, 0.05)"
+                    boxShadow: "0 0 10px rgba(255, 255, 255, 0.05)",
                   }}
                 >
                   <Github className="w-5 h-5 group-hover:text-white transition-colors" />
@@ -139,7 +139,7 @@ const ContactSection = () => {
                   rel="noopener noreferrer"
                   className="p-3 border border-dark-200 rounded-full hover:border-white/40 transition-all hover:scale-110 group"
                   style={{
-                    boxShadow: "0 0 10px rgba(255, 255, 255, 0.05)"
+                    boxShadow: "0 0 10px rgba(255, 255, 255, 0.05)",
                   }}
                 >
                   <Facebook className="w-5 h-5 group-hover:text-white transition-colors" />
@@ -152,7 +152,7 @@ const ContactSection = () => {
                   rel="noopener noreferrer"
                   className="p-3 border border-dark-200 rounded-full hover:border-white/40 transition-all hover:scale-110 group"
                   style={{
-                    boxShadow: "0 0 10px rgba(255, 255, 255, 0.05)"
+                    boxShadow: "0 0 10px rgba(255, 255, 255, 0.05)",
                   }}
                 >
                   <Linkedin className="w-5 h-5 group-hover:text-white transition-colors" />
@@ -175,7 +175,7 @@ const ContactSection = () => {
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default ContactSection
+export default ContactSection;

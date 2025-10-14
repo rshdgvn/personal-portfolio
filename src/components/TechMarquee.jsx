@@ -157,7 +157,7 @@ const TechMarquee = () => {
         <span className="hero-text-gradient">Tech Stack</span>
       </motion.h2>
       <motion.p
-        className="text-lg md:text-xl font-light italic text-white/80 mb-14 leading-relaxed max-w-3xl mx-auto text-center"
+        className="text-lg md:text-xl font-light italic text-white/80 mb-32 leading-relaxed max-w-3xl mx-auto text-center"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}

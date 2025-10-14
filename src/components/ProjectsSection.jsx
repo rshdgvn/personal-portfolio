@@ -69,7 +69,7 @@ const ProjectsSection = () => {
       <div className="max-w-6xl mx-auto relative z-10">
         {/* Header */}
         <motion.h2
-          className="text-4xl md:text-5xl font-extrabold text-white mb-4 text-center hero-text-gradient"
+          className="text-4xl md:text-5xl font-extrabold text-white mb-12 text-center hero-text-gradient"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.3 }}
@@ -80,7 +80,7 @@ const ProjectsSection = () => {
 
         {/* Section description */}
         <motion.p
-          className="text-white/70 text-center max-w-2xl mx-auto mb-12 leading-relaxed"
+          className="text-white/70 text-center max-w-2xl mx-auto mb-32 leading-relaxed"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true, amount: 0.3 }}

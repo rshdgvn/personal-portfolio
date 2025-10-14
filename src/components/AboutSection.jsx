@@ -26,7 +26,7 @@ const AboutSection = () => {
 
       {/* Title */}
       <motion.h2
-        className="text-4xl md:text-5xl font-extrabold text-white mb-12 hero-text-gradient"
+        className="text-4xl md:text-5xl font-extrabold text-white mb-32 hero-text-gradient"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}

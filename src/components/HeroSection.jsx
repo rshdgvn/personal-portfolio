@@ -9,7 +9,7 @@ const HeroSection = () => {
       opacity: 1,
       transition: {
         delay: i * 0.1,
-        duration: 0.8,
+        duration: 0.8,  
         ease: "easeOut",
       },
     }),
