@@ -11,7 +11,7 @@ const EducationTimeline = () => {
     },
     {
       id: 1,
-      years: "May-25–June-25",
+      years: "March-2025–July-2025",
       degree: "Freelance",
       institution: "Develop a Mobile App",
     },

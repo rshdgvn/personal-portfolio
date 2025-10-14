@@ -22,8 +22,6 @@ const Index = () => {
           {/* Main light source */}
           <div className="absolute -top-[30vh] -left-[30vh] w-[80vh] h-[80vh] rounded-full bg-radial-glow-premium opacity-60 animate-glow-pulse"></div>
           <div className="matrix-grid"></div>
-          <div className="matrix-grid"></div>
-          <div className="matrix-grid"></div>
 
           {/* Secondary light source */}
           <div
