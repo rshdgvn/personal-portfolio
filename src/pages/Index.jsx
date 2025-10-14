@@ -7,6 +7,7 @@ import EducationTimeline from "@/components/EducationTimeline";
 import CompetitiveStats from "@/components/CompetitiveStats";
 import BlogSection from "@/components/BlogSection";
 import ContactSection from "@/components/ContactSection";
+import AboutSection from "../components/AboutSection";
 
 const Index = () => {
   return (
@@ -95,7 +96,7 @@ const Index = () => {
               />
               <h1 className="text-2xl font-extrabold italic tracking-wider text-green-400 select-none relative">
                 <span className="relative z-10">
-                  <span className="text-white">./</span>rshdgvn
+                  rshdgvn
                 </span>
                 <span className="absolute inset-0 blur-md opacity-40 bg-green-500/30 animate-pulse"></span>
               </h1>
@@ -137,6 +138,7 @@ const Index = () => {
 
         <main className="pt-16 relative z-10">
           <HeroSection />
+          <AboutSection />
           <TechMarquee />
           <ProjectsSection />
           <EducationTimeline />

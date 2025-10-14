@@ -82,7 +82,7 @@ const HeroSection = () => {
             custom={1}
             variants={textVariants}
           >
-            I bring ideas to life through code
+            I bring ideas to life through code.
           </motion.span>
         </motion.h1>
 
