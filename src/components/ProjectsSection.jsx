@@ -12,7 +12,7 @@ const ProjectsSection = () => {
         "La Verdad Club Integrated System (LV-CIS) helps clubs stay organized. It includes features for tracking attendance, handling membership, and managing event tasks.",
       techStack: ["Laravel", "React", "TailwindCSS", "XAMPP", "MySQL", "ShadcnUI"],
       url: "#",
-      image: "/projects/LVCIS.png",
+      image: "projects/LVCIS.png",
     },
     {
       id: 2,
@@ -21,7 +21,7 @@ const ProjectsSection = () => {
         "A personal portfolio built to showcase my journey as a developer — highlighting my featured projects, tech stack, and growth in software engineering and cybersecurity.",
       techStack: ["React", "TailwindCSS", "Framer Motion", "ShadcnUI"],
       url: "#",
-      image: "/projects/rshdgvn.png",
+      image: "projects/rshdgvn.png",
     },
     {
       id: 3,
@@ -30,7 +30,7 @@ const ProjectsSection = () => {
         "Web app that helps Grade 7 students improve their Filipino vocabulary through games.",
       techStack: ["Laravel", "React", "Inertia", "React", "XAMPP", "MySQL"],
       url: "#",
-      image: "/projects/pep-7.png",
+      image: "projects/pep-7.png",
     },
     {
       id: 4,
@@ -39,7 +39,7 @@ const ProjectsSection = () => {
         "Platform that keeps your projects up-to-date and on schedule with a smart, streamlined Kanban board.",
       techStack: ["Laravel", "Blade", "TailwindCSS", "XAMPP", "MySQL"],
       url: "#",
-      image: "/projects/app-dates.png",
+      image: "projects/app-dates.png",
     },
   ];
 
