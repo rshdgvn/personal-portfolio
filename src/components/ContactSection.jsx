@@ -1,6 +1,6 @@
 import React, { useState } from "react"
 import { motion } from "framer-motion"
-import { Github, Twitter, Linkedin } from "lucide-react"
+import { Github, Linkedin, Facebook } from "lucide-react"
 import { toast } from "sonner"
 
 const ContactSection = () => {
@@ -32,8 +32,6 @@ const ContactSection = () => {
   return (
     <section id="contact" className="py-20 px-4 relative">
       {/* Corner light effect */}
-      <div className="absolute top-0 right-0 w-[300px] h-[300px] bg-corner-light opacity-30 z-0 animate-light-flash"></div>
-
       <div className="max-w-4xl mx-auto relative z-10">
         <motion.h2
           className="section-heading relative"
@@ -123,7 +121,7 @@ const ContactSection = () => {
 
               <div className="flex space-x-6 mb-6">
                 <a
-                  href="https://github.com/"
+                  href="https://github.com/rshdgvn"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-3 border border-dark-200 rounded-full hover:border-white/40 transition-all hover:scale-110 group"
@@ -136,7 +134,7 @@ const ContactSection = () => {
                 </a>
 
                 <a
-                  href="https://twitter.com/"
+                  href="https://www.facebook.com/rasheed.gavin31"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-3 border border-dark-200 rounded-full hover:border-white/40 transition-all hover:scale-110 group"
@@ -144,7 +142,7 @@ const ContactSection = () => {
                     boxShadow: "0 0 10px rgba(255, 255, 255, 0.05)"
                   }}
                 >
-                  <Twitter className="w-5 h-5 group-hover:text-white transition-colors" />
+                  <Facebook className="w-5 h-5 group-hover:text-white transition-colors" />
                   <div className="absolute inset-0 rounded-full bg-white/10 opacity-0 group-hover:opacity-100 blur-md -z-10 transition-opacity"></div>
                 </a>
 
@@ -165,10 +163,10 @@ const ContactSection = () => {
               <div className="text-center relative z-10">
                 <p className="text-white/70 mb-1">Or email me at:</p>
                 <a
-                  href="mailto:john@example.com"
+                  href="mailto:rasheedgavinesponga@gmail.com"
                   className="text-white hover:underline hover:text-white/90 transition-colors relative group"
                 >
-                  john@example.com
+                  rasheedgavinesponga@gmail.com
                   <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-white/50 group-hover:w-full transition-all duration-300"></span>
                 </a>
               </div>

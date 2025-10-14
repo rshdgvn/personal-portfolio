@@ -6,28 +6,22 @@ const BlogSection = () => {
   const blogPosts = [
     {
       id: 1,
-      title: "How I solved 300+ LeetCode problems in 3 months",
+      title: "My journey for RAITE CPC 2025",
       url: "#",
       date: "March 15, 2023"
     },
     {
       id: 2,
-      title: "10 SaaS UI Patterns You Should Steal Today",
+      title: "Writeups for ASEAN-JAPAN 2025 CTF",
       url: "#",
       date: "February 22, 2023"
     },
     {
       id: 3,
-      title: "My journey from a 2⭐ to 5⭐ coder on CodeChef",
+      title: "My very own CTF kit",
       url: "#",
       date: "January 10, 2023"
     },
-    {
-      id: 4,
-      title: "Building a real-time collaborative editor with WebSockets",
-      url: "#",
-      date: "December 5, 2022"
-    }
   ]
 
   return (
@@ -40,7 +34,7 @@ const BlogSection = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          Sharing stories & threads from my coding journey.
+          Sharing stories from my coding && CTF journey.
         </motion.h2>
 
         <div className="space-y-6">

@@ -4,7 +4,6 @@ import HeroSection from "@/components/HeroSection";
 import TechMarquee from "@/components/TechMarquee";
 import ProjectsSection from "@/components/ProjectsSection";
 import EducationTimeline from "@/components/EducationTimeline";
-import CompetitiveStats from "@/components/CompetitiveStats";
 import BlogSection from "@/components/BlogSection";
 import ContactSection from "@/components/ContactSection";
 import AboutSection from "../components/AboutSection";
@@ -22,6 +21,8 @@ const Index = () => {
         <div className="fixed top-0 left-0 w-full h-full pointer-events-none z-0 overflow-hidden">
           {/* Main light source */}
           <div className="absolute -top-[30vh] -left-[30vh] w-[80vh] h-[80vh] rounded-full bg-radial-glow-premium opacity-60 animate-glow-pulse"></div>
+          <div className="matrix-grid"></div>
+          <div className="matrix-grid"></div>
           <div className="matrix-grid"></div>
 
           {/* Secondary light source */}
@@ -91,15 +92,9 @@ const Index = () => {
             <div className="flex items-center space-x-5">
               <img
                 src="favicon.ico"
-                className="h-8 w-8 object-contain"
+                className="h-8 w-8 object-contain rounded-md"
                 alt="Logo"
               />
-              <h1 className="text-2xl font-extrabold italic tracking-wider text-green-400 select-none relative">
-                <span className="relative z-10">
-                  rshdgvn
-                </span>
-                <span className="absolute inset-0 blur-md opacity-40 bg-green-500/30 animate-pulse"></span>
-              </h1>
             </div>
 
             {/* nav */}
@@ -142,8 +137,7 @@ const Index = () => {
           <TechMarquee />
           <ProjectsSection />
           <EducationTimeline />
-          <CompetitiveStats />
-          <BlogSection />
+          {/* <BlogSection /> */}
           <ContactSection />
         </main>
 

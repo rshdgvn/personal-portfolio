@@ -5,24 +5,27 @@ const EducationTimeline = () => {
   const educationData = [
     {
       id: 1,
-      years: "202X–202X",
-      degree: "B.Tech, Computer Science",
-      institution: "IIT Dholakpur",
-      grade: "GPA: X/10"
+      years: "2023–current",
+      degree: "BS, Information Systems",
+      institution: "La Verdad Christian College",
+    },
+    {
+      id: 1,
+      years: "May-25–June-25",
+      degree: "Freelance",
+      institution: "Develop a Mobile App",
     },
     {
       id: 2,
-      years: "202X–202X",
+      years: "2021–2023",
       degree: "Higher Secondary Education",
-      institution: "XX School",
-      grade: "Percentage: XX%"
+      institution: "Liliw Senior Highschool",
     },
     {
       id: 3,
-      years: "201X–202X",
+      years: "2017–2021",
       degree: "Secondary Education",
-      institution: "Delhi Public School",
-      grade: "CGPA: XX/10"
+      institution: "Liliw National Highschool",
     }
   ]
 
@@ -36,7 +39,7 @@ const EducationTimeline = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          Education
+          Education and Experience
         </motion.h2>
 
         <div className="relative pl-10">

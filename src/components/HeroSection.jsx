@@ -72,7 +72,7 @@ const HeroSection = () => {
             custom={0}
             variants={textVariants}
           >
-            Hi, I'm <span className="text-gradient">Rasheed Gavin</span>
+            Hi, I'm <span className="hero2-text-gradient px-2">Rasheed Gavin</span>
           </motion.span>
 
           <motion.span
@@ -87,7 +87,7 @@ const HeroSection = () => {
         </motion.h1>
 
         <motion.p
-          className="text-lg md:text-xl font-light italic text-white/80 mb-10 leading-relaxed max-w-4xl mx-auto"
+          className="text-lg md:text-xl font-light text-white/80 mb-10 leading-relaxed max-w-4xl mx-auto"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}

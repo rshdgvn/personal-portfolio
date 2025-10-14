@@ -1,137 +1,141 @@
-import React from "react"
-import { motion } from "framer-motion"
-import GlowCard from "./GlowCard"
-import { ArrowRight } from "lucide-react"
+import React from "react";
+import { motion } from "framer-motion";
+import GlowCard from "./GlowCard";
+import { ArrowRight } from "lucide-react";
 
 const ProjectsSection = () => {
   const projects = [
     {
       id: 1,
-      title: "Project 1",
-      description: "xyz",
+      title: "LV CIS",
+      description:
+        "La Verdad Club Integrated System (LV-CIS) helps clubs stay organized. It includes features for tracking attendance, handling membership, and managing event tasks.",
       techStack: ["React", "Node.js", "Express"],
-      url: "#"
+      url: "#",
+      image: "/projects/LVCIS.png",
     },
     {
       id: 2,
-      title: "Project 2",
-      description: "abc",
+      title: "rshdgvn",
+      description:
+        "A personal portfolio built to showcase my journey as a developer — highlighting my featured projects, tech stack, and growth in software engineering and cybersecurity.",
       techStack: ["Vue.js", "Django", "MongoDB"],
-      url: "#"
+      url: "#",
+      image: "/projects/rshdgvn.png",
     },
     {
       id: 3,
-      title: "Project 3",
-      description: "123",
-      techStack: ["Angular", "Flask", "PostgreSQL"],
-      url: "#"
+      title: "PEP-7",
+      description:
+        "Web app that helps Grade 7 students improve their Filipino vocabulary through games.",
+      techStack: ["Svelte", "Rails", "MySQL"],
+      url: "#",
+      image: "/projects/pep-7.png",
     },
     {
       id: 4,
-      title: "Project 4",
-      description: "456",
-      techStack: ["Svelte", "Ruby on Rails", "MySQL"],
-      url: "#"
+      title: "AppDates",
+      description:
+        "Platform that keeps your projects up-to-date and on schedule with a smart, streamlined Kanban board.",
+      techStack: ["Svelte", "Rails", "MySQL"],
+      url: "#",
+      image: "/projects/app-dates.png",
     },
-    {
-      id: 5,
-      title: "Project 5",
-      description: "789",
-      techStack: ["Next.js", "Spring Boot", "SQLite"],
-      url: "#"
+  ];
+
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: { staggerChildren: 0.15, delayChildren: 0.2 },
     },
-    {
-      id: 6,
-      title: "Project 6",
-      description: "101",
-      techStack: ["Golang", "ASP.NET", "Firebase"],
-      url: "#"
-    }
-  ]
+  };
 
   const cardVariants = {
     hidden: { opacity: 0, y: 20 },
-    visible: i => ({
+    visible: {
       opacity: 1,
       y: 0,
-      transition: {
-        delay: i * 0.1,
-        duration: 0.5,
-        ease: "easeOut"
-      }
-    })
-  }
+      transition: { duration: 0.5, ease: "easeOut" },
+    },
+  };
 
   return (
-    <section id="projects" className="py-20 px-4 relative overflow-hidden">
-      {/* Premium light effect for top corner */}
-      <div className="corner-light-premium top-0 right-0 opacity-50"></div>
-
-      {/* Light rays */}
-      <div
-        className="light-ray-premium opacity-20"
-        style={{
-          top: "30%",
-          right: "-20%",
-          width: "70%",
-          transform: "rotate(165deg)"
-        }}
-      ></div>
-      <div
-        className="light-ray-premium opacity-15"
-        style={{
-          top: "60%",
-          right: "-10%",
-          width: "50%",
-          transform: "rotate(150deg)"
-        }}
-      ></div>
-
+    <section
+      id="projects"
+      className="py-20 px-4 relative overflow-hidden bg-black"
+      style={{ scrollBehavior: "smooth" }}
+    >
       <div className="max-w-6xl mx-auto relative z-10">
+        {/* Header */}
         <motion.h2
-          className="section-heading-premium relative"
+          className="text-4xl md:text-5xl font-extrabold text-white mb-4 text-center hero-text-gradient"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.6 }}
         >
           Featured Projects
         </motion.h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {projects.map((project, index) => (
-            <motion.div
-              key={project.id}
-              custom={index}
-              variants={cardVariants}
-              initial="hidden"
-              whileInView="visible"
-              viewport={{ once: true }}
-            >
-              <GlowCard
-                intensity={
-                  index % 3 === 0 ? "high" : index % 2 === 0 ? "medium" : "low"
-                }
-                className="group h-full"
-                hoverScale={1.03}
-              >
-                <div className="p-6 h-full flex flex-col relative z-10">
-                  {/* Premium highlight effect on hover */}
-                  <div className="absolute -inset-x-4 -inset-y-4 bg-white/5 rounded-xl opacity-0 group-hover:opacity-100 -z-10 blur-2xl transition-opacity"></div>
-                  <div className="absolute inset-0 opacity-0 group-hover:opacity-10 bg-gradient-to-br from-white via-white/20 to-transparent transition-all duration-500"></div>
+        {/* Section description */}
+        <motion.p
+          className="text-white/70 text-center max-w-2xl mx-auto mb-12 leading-relaxed"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ duration: 0.8, delay: 0.1 }}
+        >
+          As I grow as a developer, each project becomes a reflection of my
+          progress — sharper ideas, cleaner code, and better design every time.
+        </motion.p>
 
-                  <h3 className="text-2xl font-bold italic mb-3 group-hover:text-white transition-colors">
+        {/* Cards */}
+        <motion.div
+          className="grid grid-cols-1 md:grid-cols-2 gap-14"
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.3 }}
+        >
+          {projects.map((project) => (
+            <motion.div key={project.id} variants={cardVariants}>
+              <GlowCard
+                className="group relative overflow-hidden rounded-2xl transition-transform duration-300 hover:scale-[1.02]"
+                style={{ willChange: "transform, opacity" }}
+              >
+                {/* Grid background */}
+                <div className="absolute inset-0 z-0 pointer-events-none">
+                  <div className="absolute inset-0 bg-gradient-to-br from-green-900/10 via-transparent to-green-900/10" />
+                </div>
+
+                {/* Content */}
+                <div className="relative z-10 flex flex-col h-full p-6">
+                  {project.image && (
+                    <div className="w-full aspect-video overflow-hidden rounded-xl mb-4 bg-black/30 flex items-center justify-center">
+                      <img
+                        src={project.image}
+                        alt={project.title}
+                        loading="lazy"
+                        decoding="async"
+                        className="w-full h-full object-contain transition-transform duration-500 group-hover:scale-105"
+                      />
+                    </div>
+                  )}
+
+                  <h3 className="hero2-text-gradient text-3xl font-bold text-white mb-3">
                     {project.title}
                   </h3>
-                  <p className="text-white/70 mb-6 group-hover:text-white/90 transition-colors">
+
+                  <p className="text-white/70 mb-4 leading-relaxed">
                     {project.description}
                   </p>
 
-                  <div className="flex flex-wrap gap-2 mb-6 mt-auto">
+                  <div className="flex flex-wrap gap-2 mb-4">
                     {project.techStack.map((tech, i) => (
                       <span
                         key={i}
-                        className="text-xs px-3 py-1 bg-dark-200/50 backdrop-blur-sm border border-white/5 rounded-full text-white/60 group-hover:text-white/90 group-hover:border-white/20 transition-all duration-300"
+                        className="text-xs px-3 py-1 bg-white/5 border border-white/10 rounded-full text-white/70 hover:bg-green-400 hover:text-black transition-colors duration-200 cursor-default"
                       >
                         {tech}
                       </span>
@@ -140,20 +144,19 @@ const ProjectsSection = () => {
 
                   <a
                     href={project.url}
-                    className="inline-flex items-center gap-1 text-sm text-white/70 hover:text-white group-hover:text-white/90 transition-colors relative mt-auto"
+                    className="inline-flex items-center gap-1 text-sm text-green-300 hover:text-white font-medium"
                   >
                     <span>View Project</span>
-                    <ArrowRight className="w-3 h-3 group-hover:translate-x-1 transition-transform" />
-                    <span className="absolute bottom-0 left-0 w-0 h-[1px] bg-white/30 group-hover:w-full transition-all duration-300"></span>
+                    <ArrowRight className="w-3 h-3 transition-transform group-hover:translate-x-1" />
                   </a>
                 </div>
               </GlowCard>
             </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default ProjectsSection
+export default ProjectsSection;
