@@ -4,7 +4,6 @@ import HeroSection from "@/components/HeroSection";
 import TechMarquee from "@/components/TechMarquee";
 import ProjectsSection from "@/components/ProjectsSection";
 import EducationTimeline from "@/components/EducationTimeline";
-import BlogSection from "@/components/BlogSection";
 import ContactSection from "@/components/ContactSection";
 import AboutSection from "../components/AboutSection";
 
@@ -135,7 +134,6 @@ const Index = () => {
           <TechMarquee />
           <ProjectsSection />
           <EducationTimeline />
-          {/* <BlogSection /> */}
           <ContactSection />
         </main>
 
