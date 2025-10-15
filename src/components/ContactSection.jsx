@@ -34,7 +34,7 @@ const ContactSection = () => {
       {/* Corner light effect */}
       <div className="max-w-4xl mx-auto relative z-10">
         <motion.h2
-          className="text-4xl md:text-5xl font-extrabold text-white mb-32 text-center hero-text-gradient"
+          className="text-4xl md:text-5xl font-extrabold text-white mb-12 hero-text-gradient"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.3 }}
@@ -147,7 +147,7 @@ const ContactSection = () => {
                 </a>
 
                 <a
-                  href="https://linkedin.com/"
+                  href="https://www.linkedin.com/in/rasheed-gavin-65332a349/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="p-3 border border-dark-200 rounded-full hover:border-white/40 transition-all hover:scale-110 group"

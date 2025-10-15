@@ -19,13 +19,13 @@ const EducationTimeline = () => {
       id: 2,
       years: "2021–2023",
       degree: "Higher Secondary Education",
-      institution: "Liliw Senior Highschool",
+      institution: "Liliw Senior High School",
     },
     {
       id: 3,
       years: "2017–2021",
       degree: "Secondary Education",
-      institution: "Liliw National Highschool",
+      institution: "Liliw National High School",
     },
   ];
 
