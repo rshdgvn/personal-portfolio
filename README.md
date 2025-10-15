@@ -89,15 +89,9 @@ Ensure you have **Node.js** and **npm** (or **yarn**) installed on your system.
    npm run dev
    ```
 ### Deployment
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/rshdgvn/personal-portfolio.git
-   cd personal-portfolio
-   ```
-2. Install and run the server:
+1. Deploy the build folder to your gh-pages branch:
    ```bash   
-   npm install
-   npm run dev
+   npm run deploy
    ```
 
 ## 🌐 Live Demo
