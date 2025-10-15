@@ -10,7 +10,14 @@ const ProjectsSection = () => {
       title: "LV CIS",
       description:
         "La Verdad Club Integrated System (LV-CIS) helps clubs stay organized. It includes features for tracking attendance, handling membership, and managing event tasks.",
-      techStack: ["Laravel", "React", "TailwindCSS", "XAMPP", "MySQL", "ShadcnUI"],
+      techStack: [
+        "Laravel",
+        "React",
+        "TailwindCSS",
+        "XAMPP",
+        "MySQL",
+        "ShadcnUI",
+      ],
       url: "https://github.com/rshdgvn/LV-CIS",
       image: "projects/LVCIS.png",
     },
@@ -25,6 +32,24 @@ const ProjectsSection = () => {
     },
     {
       id: 3,
+      title: "Quick Chat",
+      description:
+        "A personal project to learn the MERN stack and real-time chat using Socket.IO.",
+      techStack: ["React", "Express", "Node.js", "MongoDB", "Socket.io"],
+      url: "https://rshdgvn.github.io/personal-portfolio/",
+      image: "projects/quick-chat.png",
+    },
+    {
+      id: 4,
+      title: "Finance Tracker",
+      description:
+        "A web app to track income, expenses, and savings, helping users manage their budget and monitor financial goals.",
+      techStack: ["Laravel", "React", "XAMPP", "MySQL", "API"],
+      url: "https://github.com/rshdgvn/quick-chat",
+      image: "projects/finance-tracker.png",
+    },
+    {
+      id: 5,
       title: "PEP-7",
       description:
         "Web app that helps Grade 7 students improve their Filipino vocabulary through games.",
@@ -32,12 +57,13 @@ const ProjectsSection = () => {
       url: "https://github.com/rshdgvn/pep-7",
       image: "projects/pep-7.png",
     },
+
     {
-      id: 4,
+      id: 6,
       title: "AppDates",
       description:
         "Platform that keeps your projects up-to-date and on schedule with a smart, streamlined Kanban board.",
-      techStack:  ["Laravel", "React", "Inertia", "React", "XAMPP", "MySQL"],
+      techStack: ["Laravel", "React", "Inertia", "XAMPP", "MySQL"],
       url: "https://github.com/rshdgvn/app-dates",
       image: "projects/app-dates.png",
     },
