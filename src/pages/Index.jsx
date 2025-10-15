@@ -116,7 +116,7 @@ const Index = () => {
                     href="https://drive.google.com/file/d/1aYTG6UXBzvGPtMnL7oWagsDg29nu1oKz/view?usp=drive_link"
                     className="relative overflow-hidden border border-green-500/40 text-green-400 hover:text-black hover:bg-green-400 px-4 py-1.5 rounded-md transition-all duration-300 group"
                   >
-                    <span className="relative z-10">Resume</span>
+                    <span className="relative z-10">CV</span>
                     <span className="absolute inset-0 bg-green-400/20 blur-lg opacity-0 group-hover:opacity-100 transition-opacity"></span>
                   </a>
                 </li>
