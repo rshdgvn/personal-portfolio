@@ -11,7 +11,7 @@ const ProjectsSection = () => {
       description:
         "La Verdad Club Integrated System (LV-CIS) helps clubs stay organized. It includes features for tracking attendance, handling membership, and managing event tasks.",
       techStack: ["Laravel", "React", "TailwindCSS", "XAMPP", "MySQL", "ShadcnUI"],
-      url: "#",
+      url: "https://github.com/rshdgvn/LV-CIS",
       image: "projects/LVCIS.png",
     },
     {
@@ -20,7 +20,7 @@ const ProjectsSection = () => {
       description:
         "A personal portfolio built to showcase my journey as a developer — highlighting my featured projects, tech stack, and growth in software engineering and cybersecurity.",
       techStack: ["React", "TailwindCSS", "Framer Motion", "ShadcnUI"],
-      url: "#",
+      url: "https://rshdgvn.github.io/personal-portfolio/",
       image: "projects/rshdgvn.png",
     },
     {
@@ -28,8 +28,8 @@ const ProjectsSection = () => {
       title: "PEP-7",
       description:
         "Web app that helps Grade 7 students improve their Filipino vocabulary through games.",
-      techStack: ["Laravel", "React", "Inertia", "React", "XAMPP", "MySQL"],
-      url: "#",
+      techStack: ["Laravel", "Blade", "TailwindCSS", "XAMPP", "MySQL"],
+      url: "https://github.com/rshdgvn/pep-7",
       image: "projects/pep-7.png",
     },
     {
@@ -37,8 +37,8 @@ const ProjectsSection = () => {
       title: "AppDates",
       description:
         "Platform that keeps your projects up-to-date and on schedule with a smart, streamlined Kanban board.",
-      techStack: ["Laravel", "Blade", "TailwindCSS", "XAMPP", "MySQL"],
-      url: "#",
+      techStack:  ["Laravel", "React", "Inertia", "React", "XAMPP", "MySQL"],
+      url: "https://github.com/rshdgvn/app-dates",
       image: "projects/app-dates.png",
     },
   ];
@@ -144,6 +144,7 @@ const ProjectsSection = () => {
 
                   <a
                     href={project.url}
+                    target="blank"
                     className="inline-flex items-center gap-1 text-sm text-green-300 hover:text-white font-medium"
                   >
                     <span>View Project</span>
