@@ -97,7 +97,7 @@ Ensure you have **Node.js** and **npm** (or **yarn**) installed on your system.
 ## 🌐 Live Demo
 
 **Live URL:**  
-[http://localhost:5173/personal-portfolio/](https://rshdgvn.github.io/personal-portfolio/)
+[https://rshdgvn.github.io/personal-portfolio/](https://rshdgvn.github.io/personal-portfolio/)
 
 **Demo Recording:**  
 [Watch the demo on Google Drive](https://drive.google.com/file/d/1RpHsioCfJ_TdytYSu2FFBfzyPA_bC5Gf/view?usp=sharing)
