@@ -113,7 +113,7 @@ const Index = () => {
                 ))}
                 <li>
                   <a
-                    href="/resume.pdf"
+                    href="https://drive.google.com/file/d/1aYTG6UXBzvGPtMnL7oWagsDg29nu1oKz/view?usp=drive_link"
                     className="relative overflow-hidden border border-green-500/40 text-green-400 hover:text-black hover:bg-green-400 px-4 py-1.5 rounded-md transition-all duration-300 group"
                   >
                     <span className="relative z-10">Resume</span>
